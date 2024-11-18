@@ -85,11 +85,12 @@ header .cta-button:hover {
 }
 
 .toggle-container {
-    position: relative;
+    position: absolute;
+    top: 5px;
+    right: -10px;
     display: inline-block;
     width: 40px;
     height: 20px;
-    margin-left: 10px;
 }
 
 .toggle-container input {
@@ -318,5 +319,34 @@ footer a:hover {
     .toggle-container {
         display: inline-block;
         margin-left: 10px;
+    }
+}
+/* Position adjustments for the night mode toggle */
+
+/* Mobile View (default behavior) */
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-container {
+    margin-left: 10px; /* Keep it next to the hamburger icon */
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+    .menu-container {
+        display: flex;
+        justify-content: flex-end; /* Push elements to the right */
+        flex: 1;
+    }
+
+    .toggle-container {
+        position: relative; /* Align relative to the nav menu */
+        margin-left: 20px; /* Add space between menu and toggle */
+    }
+
+    nav {
+        display: flex; /* Ensure the nav stays horizontal */
     }
 }
