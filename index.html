@@ -4,44 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mock Test App</title>
+    <!-- Linking the CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for modern typography -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header section containing logo, navigation, and theme toggle -->
     <header>
         <div class="container">
+            <!-- Logo section -->
             <div class="logo"><a href="index.html">MockTestApp</a></div>
-        <div class="menu-container">
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="toggle-container">
-        <input type="checkbox" id="theme-toggle">
-        <label for="theme-toggle" class="theme-toggle-label"></label>
-    </div>
-</div>
-
-        <nav id="nav-menu">
+            <!-- Menu container with hamburger icon and theme toggle -->
+            <div class="menu-container">
+                <!-- Hamburger menu for mobile view -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- Navigation links and buttons -->
+            <nav id="nav-menu">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
+                <!-- Login/Sign Up button -->
                 <a href="login.html" class="cta-button">Login/Sign Up</a>
+                <!-- Theme toggle for dark mode -->
+                <div class="toggle-container">
+                    <input type="checkbox" id="theme-toggle">
+                    <label for="theme-toggle" class="theme-toggle-label"></label>
+                </div>
             </nav>
         </div>
-
-
     </header>
+
+    <!-- Main content area -->
     <main>
+        <!-- Banner section with welcome message -->
         <section class="banner" id="banner">
             <div class="container">
                 <h1>Welcome to Mock Test App</h1>
                 <p>Create your mock tests based on your syllabus and practice for job tests and university admissions.</p>
+                <!-- Call-to-action button -->
                 <a href="create-test.html" class="cta-button">Create Your Mock Test Now!</a>
             </div>
         </section>
+        
+        <!-- Features section -->
         <section class="features">
             <div class="container">
                 <h2>Features</h2>
@@ -57,6 +70,8 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Testimonials section -->
         <section class="testimonials">
             <div class="container">
                 <h2>Testimonials</h2>
@@ -71,12 +86,15 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 MockTestApp. All rights reserved.</p>
             <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="contact.html">Contact Us</a></p>
         </div>
     </footer>
+    <!-- Linking the JavaScript file -->
     <script src="scripts.js"></script>
 </body>
 </html>
